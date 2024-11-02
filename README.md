@@ -1,2 +1,2 @@
-# NexterApp
-Grid building desing for selling properties 
+# TrilloDesign
+Trillo scss desgin aplication
