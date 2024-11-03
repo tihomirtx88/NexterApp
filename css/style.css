@@ -11,14 +11,14 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  color: #6D5D4B;
+  color: #6d5d4b;
   font-weight: 300;
   line-height: 1.6; }
 
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   .container > * {
     padding: 40px;
     font-size: 3rem; }
@@ -33,18 +33,24 @@ body {
   grid-column: full-start / col-end 6; }
 
 .realtors {
-  background-color: #B28451;
+  background-color: #b28451;
   grid-column: col-start 7 / full-end; }
 
 .features {
-  background-color: #101d2c;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap: 6rem; }
 
 .story____pictures {
-  background-color: #aaa; }
+  background-color: #aaa;
+  grid-column: full-start / col-end 4; }
 
 .story__content {
-  background-color: #54483A; }
+  background-color: #54483a;
+  grid-column: col-start 5 / full-end; }
 
 .homes {
   background-color: "Nunito", sans-serif;
