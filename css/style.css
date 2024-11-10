@@ -44,11 +44,10 @@ body {
   .heading-2--dark {
     color: #54483a; }
 
-.heading-1--light {
-  color: #f9f7f6; }
-
-.heading-1--dark {
-  color: #54483a; }
+.heading-1 {
+  font-size: 4.5rem;
+  color: #f9f7f6;
+  line-height: 1; }
 
 .btn {
   background-color: #c69963;
@@ -102,8 +101,26 @@ body {
     transform: translateY(1.3rem); }
 
 .header {
-  background-color: #f9f7f6;
-  grid-column: full-start / col-end 6; }
+  background-color: #54483a;
+  grid-column: full-start / col-end 6;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img//hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+  grid-row-gap: 1.5rem;
+  justify-content: center; }
+  .header__logo {
+    height: 3rem;
+    justify-self: center; }
+  .header__seenon-logos img {
+    height: 2.5rem; }
+  .header__btn {
+    align-self: start;
+    justify-self: start; }
 
 .realtors {
   background-color: #b28451;
