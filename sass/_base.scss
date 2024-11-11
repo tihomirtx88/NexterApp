@@ -16,7 +16,9 @@ $font-display: "Josefin Sans", sans-serif;
 
 // Responsive breakpoints
 $bp-largest: 75em; //1200px
-$bp-large: 62.5rem; //1000px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
 
 *,
 *::before,
